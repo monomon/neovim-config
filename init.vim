@@ -1,5 +1,5 @@
 " init.vim file
-" Created by Tanzeem Nazmee
+" Created by Tenn1518
 
 " Pathogen startup
 execute pathogen#infect()
