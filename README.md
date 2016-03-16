@@ -3,7 +3,7 @@
 Welcome to my repo used for keeping my Neovim configuration files that are important for me whenever I setup a new system that I use neovim regularly on.
 
 #### How do I use these files?
-First, you'll (obviously) need [Neovim](https://github.com/neovim/neovim), though ordinary [Vim](https://github.com/vim/vim) may work also. You need to clone this repository and move it to $XDG_CONFIG_HOME/nvim.
+First, you'll (obviously) need [Neovim](https://github.com/neovim/neovim), though ordinary [Vim](https://github.com/vim/vim) may work also (but the following instructions will not work for Vim). You need to clone this repository and move it to $XDG_CONFIG_HOME/nvim.
 
 ##### On Mac/Linux/BSD:
 ```
