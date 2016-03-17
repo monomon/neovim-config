@@ -4,9 +4,11 @@ Welcome to my repo used for keeping my Neovim configuration files that are impor
 
 | Plugins | Description |
 | --- | --- |
-| Pathogen.vim | Plugin installer |
-| --- | --- |
-| Unite.vim | Used to create interfaces, dependency of vim-fugitive |
+| [Pathogen.vim](https://github.com/tpope/vim-pathogen) | Plugin installer |
+| [unite.vim](https://github.com/https://github.com/Shougo/unite.vim) | Used to create interfaces, dependency of vim-fugitive |
+| [vim-airline](https://github.com/vim-airline/vim-airline) | Lean & mean status/tabline that's light as air |
+| [vimfiler](https://github.com/Shougo/vimfiler.vim) | Powerful file explorer implemented by vimscript |
+| [vim-fugitive](https://github.com/tpope/vim-fugitive) | A Git wrapper for vim |
 
 #### How do I use these files?
 First, you'll (obviously) need [Neovim](https://github.com/neovim/neovim), though ordinary [Vim](https://github.com/vim/vim) may work also (but the following instructions will not work for Vim). You need to clone this repository and move it to $XDG_CONFIG_HOME/nvim.
