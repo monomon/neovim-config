@@ -25,4 +25,5 @@ I don't really know a simple way to clone the repo and move it to ~/AppData/Loca
 
 ##### To-Do
 Add more plugins and stuffs
+
 That's pretty much it.
