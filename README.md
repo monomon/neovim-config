@@ -2,6 +2,12 @@
 
 Welcome to my repo used for keeping my Neovim configuration files that are important for me whenever I setup a new system that I use neovim regularly on.
 
+| Plugins | Description |
+| --- | --- |
+| Pathogen.vim | Plugin installer |
+| --- | --- |
+| Unite.vim | Used to create interfaces, dependency of vim-fugitive |
+
 #### How do I use these files?
 First, you'll (obviously) need [Neovim](https://github.com/neovim/neovim), though ordinary [Vim](https://github.com/vim/vim) may work also (but the following instructions will not work for Vim). You need to clone this repository and move it to $XDG_CONFIG_HOME/nvim.
 
