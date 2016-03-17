@@ -15,7 +15,7 @@ First, you'll (obviously) need [Neovim](https://github.com/neovim/neovim), thoug
 
 ##### On Mac/Linux/BSD:
 ```
-git clone https://github.com/Tenn1518/neovim-config ~/.config/nvim
+git clone --recursive https://github.com/Tenn1518/neovim-config ~/.config/nvim
 ```
 That's it! Surprised?
 
