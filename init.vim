@@ -7,6 +7,7 @@ execute pathogen#infect()
 " Set
 set incsearch
 set nocp
+set number
 
 " Set <leader> and <localleader>
 let mapleader = "'"
