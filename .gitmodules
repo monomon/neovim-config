@@ -1,0 +1,12 @@
+[submodule "bundle/unite.vim"]
+	path = bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "bundle/vimfiler.vim"]
+	path = bundle/vimfiler.vim
+	url = https://github.com/Shougo/vimfiler.vim
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
