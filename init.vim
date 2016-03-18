@@ -45,3 +45,7 @@ augroup END
 " Default file explorer to VimFiler
 let g:vimfiler_as_default_explorer = 1
 
+" Vim Solarized theme 
+syntax enable
+set background=dark
+colorscheme solarized
