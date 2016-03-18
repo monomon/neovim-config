@@ -15,7 +15,7 @@ Welcome to my repo used for keeping my Neovim configuration files that are impor
 #### How do I use these files?
 First, you'll (obviously) need [Neovim](https://github.com/neovim/neovim), though ordinary [Vim](https://github.com/vim/vim) may work also (but the following instructions will not work for Vim). You need to clone this repository and move it to $XDG_CONFIG_HOME/nvim.
 
-In order to use vim-colors-solarized, you will need to download and install the solarized colorschemes for your terminal emulator. The vim colorscheme will work without it, but the colors will be pulled from whatever colors your terminal has available, which likely will not look as good as the precisely chosen ones picked for the solarized colorscheme.
+In order to use vim-colors-solarized, you will need to download and install the solarized colorschemes for your terminal emulator. The vim colorscheme will work without it, but the colors will be pulled from whatever colors your terminal has available, which likely will not look as good as the precisely chosen ones picked for the solarized colorscheme. If you really don't want to use the solarized colorscheme or can't use it because your terminal emulator doesn't support it, comment lines 51-53 in init.vim.
 
 ##### On Mac/Linux/BSD:
 ```
