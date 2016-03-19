@@ -7,6 +7,7 @@ Welcome to my repo used for keeping my Neovim configuration files that are impor
 | [Pathogen.vim](https://github.com/tpope/vim-pathogen) | Plugin installer and manager |
 | [unite.vim](https://github.com/https://github.com/Shougo/unite.vim) | Used to create interfaces, dependency of vim-fugitive |
 | [vim-airline](https://github.com/vim-airline/vim-airline) | Lean & mean status/tabline that's light as air |
+| [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) | A collection of themes for vim-airline |
 | [vimfiler](https://github.com/Shougo/vimfiler.vim) | Powerful file explorer implemented by vimscript |
 | [vim-fugitive](https://github.com/tpope/vim-fugitive) | A Git wrapper for vim |
 | [vim-sensible](https://github.com/tpope/vim-sensible) | Defaults everyone can agree on |
