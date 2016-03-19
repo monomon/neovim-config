@@ -57,3 +57,6 @@ let g:vimfiler_as_default_explorer = 1
 syntax enable
 set background=dark
 colorscheme solarized
+
+" Powerline symbols for vim-airline
+let g:airline_powerline_fonts = 1
