@@ -20,6 +20,12 @@ nnoremap <leader>r :set relativenumber!<cr>
 nnoremap <leader>v :vsplit $MYVIMRC<cr>
 nnoremap <leader>s :source $MYVIMRC<cr>
 
+" Move around easier in insert mode
+inoremap <c-h> <left>
+inoremap <c-j> <down>
+inoremap <c-k> <up>
+inoremap <c-l> <right>
+
 " Strong H/L
 nnoremap H 0
 nnoremap L $
@@ -29,7 +35,7 @@ inoremap jk <ESC>
 inoremap <ESC> <NOP>
 
 " Make yanking an entire line much easier
-nnoremap Y 0y$
+nnoremap yl 0y$
 
 " Cut function
 nnoremap yd 0y$dd
