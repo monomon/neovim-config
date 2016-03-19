@@ -26,7 +26,10 @@ That's it! Surprised?
 ##### On Windows
 I don't really know a simple way to clone the repo and move it to ~/AppData/Local/nvim since I don't have a Windows system to test that, so just clone this repository and move the folder to ~/AppData/Local/nvim.
 
-##### To-Do
+#### To-Do
 Add more plugins and stuffs
 
 That's pretty much it.
+
+#### Plugins?
+Plugins are managed by [Pathogen.vim](https://github.com/tpope/vim-pathogen), a plugin installer and manager for Vim/Neovim and my personal favorite. To install more plugins, you need to drop your plugin folder into $MYVIMRC/bundle/, which on Unix-like systems should be ~/.config/nvim. 
