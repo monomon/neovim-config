@@ -47,7 +47,7 @@ That's pretty much it.
 #### Plugins?
 Plugins are managed by [Pathogen.vim](https://github.com/tpope/vim-pathogen), a plugin installer and manager for Vim/Neovim and my personal favorite. To install more plugins, you need to drop your plugin folder into $MYVIMRC/bundle/, which on Unix-like systems should be ~/.config/nvim. 
 
-Plugins are handled as [submodules](https://www.git-scm.com/book/en/v2/Git-Tools-Submodules), so when you pull the repository, you get the latest version of all the plugins. That's also why you have to clone the repo with the "--recursive" flag, so that all the submodules are also pulled and initialized. You'll need to do a `git fetch`, `git pull`, and `git submodule update` in order to update the repository and the submodules. You'll also probably need to do a `git submodule init` if you find empty plugin folders, which basically mean I've added a new submodule and you need to let git initialize it and install it.
+Plugins are handled as [submodules](https://www.git-scm.com/book/en/v2/Git-Tools-Submodules), so when you pull the repository, you get the latest version of all the plugins. That's also why you have to clone the repo with the "--recursive" flag, so that all the submodules are also pulled and initialized. You'll need to do a `git fetch`, `git pull`, and `git submodule update --remote` in order to update the repository and the submodules. You'll also probably need to do a `git submodule init` if you find empty plugin folders, which basically mean I've added a new submodule and you need to let git initialize it and install it.
 
 #### A quick warning
 
