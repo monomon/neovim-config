@@ -60,3 +60,8 @@ colorscheme solarized
 
 " Powerline symbols for vim-airline
 let g:airline_powerline_fonts = 1
+
+" Set vim-airline theme
+" Uncomment the following line if you wish not to use the solarized
+" colorscheme
+let g:airline_theme="solarized"
