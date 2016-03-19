@@ -33,3 +33,5 @@ That's pretty much it.
 
 #### Plugins?
 Plugins are managed by [Pathogen.vim](https://github.com/tpope/vim-pathogen), a plugin installer and manager for Vim/Neovim and my personal favorite. To install more plugins, you need to drop your plugin folder into $MYVIMRC/bundle/, which on Unix-like systems should be ~/.config/nvim. 
+
+I'm a very nooby neovim user, and have only been using it for about a couple of weeks now. I've been using vim for perhaps ~5 months now, and though I can do basic things, I'm very much still a noob. I also don't care about any vi philosophies and just want to make things easier for myself, so if you don't agree with something I've decided to add, I don't care very much.
