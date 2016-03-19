@@ -16,7 +16,7 @@ Welcome to my repo used for keeping my Neovim configuration files that are impor
 #### How do I use these files?
 First, you'll (obviously) need [Neovim](https://github.com/neovim/neovim), though ordinary [Vim](https://github.com/vim/vim) may work also (but the following instructions will not work for Vim). You need to clone this repository and move it to $XDG_CONFIG_HOME/nvim.
 
-In order to use vim-colors-solarized, you will need to download and install the solarized colorschemes for your terminal emulator. Without the solarized colorscheme enabled, your vim session will look very ugly. If you really don't want to use the solarized colorscheme or can't use it because your terminal emulator doesn't support it, comment lines 51-53 in init.vim.
+In order to use vim-colors-solarized, you will need to download and install the solarized colorschemes for your terminal emulator. Without the solarized colorscheme enabled, your vim session will look very ugly. If you really don't want to use the solarized colorscheme or can't use it because your terminal emulator doesn't support it, comment lines 51-53 and line 67, and uncomment line 72 in init.vim.
 
 
 Vim-airline is set up to use powerline symbols. If you don't already have pre-patched Powerline fonts, you can clone the powerline/fonts repo and run install.sh from inside the repository. Clone it with:

@@ -62,6 +62,11 @@ colorscheme solarized
 let g:airline_powerline_fonts = 1
 
 " Set vim-airline theme
-" Uncomment the following line if you wish not to use the solarized
+" Comment the following line if you wish not to use the solarized
 " colorscheme
 let g:airline_theme="solarized"
+
+" Default vim-airline theme
+" Uncomment the following line if you wish to use the default vim-airline
+" theme
+" let g:airline_theme="dark"
