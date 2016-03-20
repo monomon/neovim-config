@@ -70,3 +70,57 @@ let g:airline_theme="solarized"
 " Uncomment the following line if you wish to use the default vim-airline
 " theme
 " let g:airline_theme="dark"
+
+" Set 2 lines to the cursor when moving vertically with j/k like Emacs
+set so=2
+
+" Visual mode pressing * or # searches for the current selection
+function! VisualSelection(direction, extra_filter) range
+    let l:saved_reg = @"
+    execute "normal! vgvy"
+
+    let l:pattern = escape(@", '\\/.*$^~[]')
+    let l:pattern = substitute(l:pattern, "\n$", "", "")
+
+    if a:direction == 'b'
+        execute "normal ?" . l:pattern . "^M"
+    elseif a:direction == 'gv'
+        call CmdLine("Ag \"" . l:pattern . "\" " )
+    elseif a:direction == 'replace'
+        call CmdLine("%s" . '/'. l:pattern . '/')
+    elseif a:direction == 'f'
+        execute "normal /" . l:pattern . "^M"
+    endif
+
+    let @/ = l:pattern
+    let @" = l:saved_reg
+endfunction
+vnoremap <silent> * :call VisualSelection('f', '')<CR>
+vnoremap <silent> # :call VisualSelection('b', '')<CR>
+
+" Treat wrapped lines as individual when moving vertically
+nnoremap j gj
+nnoremap k gk
+
+" Map <Space> to search and Ctrl+<Space> to search backwards
+nnoremap <space> /
+nnoremap <c-space> ?
+
+" Disable search highlight when <Leader>+<Space> is pressed
+nnoremap <silent> <leader><space> :noh<cr>
+
+" Move between windows in normal mode
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+
+" Close buffer
+nnoremap <leader>bd :Bclose<cr>:tabclose<cr>gT
+
+" Useful mappings for managing tabs
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove 
+map <leader>t<leader> :tabnext
