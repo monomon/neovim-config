@@ -5,7 +5,7 @@
 
 " Pathogen {{{
 execute pathogen#infect()
-}}}
+" }}}
 
 " Set options {{{
 set incsearch
@@ -122,6 +122,13 @@ map <leader>t<leader> :tabnext
 
 " Space toggles a fold
 nnoremap <space> za
+
+" The Silver Searcher mapping
+nnoremap <leader>a :Ag
+
+" Ctrl+P mapping
+let g:ctrlp_map = "<c-p>"
+let g:ctrlp_cmd = "CtrlP"
 " }}}
 
 " Colorscheme {{{
@@ -145,6 +152,13 @@ let g:airline_theme="solarized"
 " Uncomment the following line if you wish to use the default vim-airline
 " theme
 " let g:airline_theme="dark"
+" }}}
+
+" CtrlP {{{
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " }}}
 
 " Enable folding in init.vim to make editing init.vim easier
