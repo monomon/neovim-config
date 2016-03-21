@@ -21,7 +21,7 @@ First, you'll (obviously) need [Neovim](https://github.com/neovim/neovim), thoug
 In order to use vim-colors-solarized, you will need to download and install the solarized colorschemes for your terminal emulator. Without the solarized colorscheme enabled, your vim session will look very ugly. If you really don't want to use the solarized colorscheme or can't use it because your terminal emulator doesn't support it, comment lines 51-53 and line 67, and uncomment line 72 in init.vim.
 
 
-Vim-airline is set up to use powerline symbols. If you don't already have pre-patched Powerline fonts, you can clone the powerline/fonts repo and run install.sh from inside the repository. Clone it with:
+Vim-airline is set up to use powerline symbols. If you don't already have pre-patched Powerline fonts, you can clone the [powerline/fonts](https://github.com/powerline/fonts) repo and run install.sh from inside the repository. Clone it with:
 ```
 git clone https://github.com/powerline/fonts
 ```
