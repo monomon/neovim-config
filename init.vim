@@ -1,5 +1,7 @@
-" init.vim file
-" Created by Tenn1518
+"""""""""""""""""""""""
+" init.vim file       "
+" Created by Tenn1518 "
+"""""""""""""""""""""""
 
 " Pathogen startup
 execute pathogen#infect()
@@ -8,6 +10,11 @@ execute pathogen#infect()
 set incsearch
 set nocp
 set number
+set cursorline
+set so=2
+
+" Enable syntax highlighting
+syntax enable
 
 " Set <leader> and <localleader>
 let mapleader = "'"
@@ -40,12 +47,15 @@ nnoremap yl 0y$
 " Cut function
 nnoremap yd 0y$dd
 
-" Comment function
+filetype on
+
+" Automatic commands
 augroup comment
 	autocmd!
 	autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
 	autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
-	autocmd BufWritePre,BufRead *.vim nnoremap <buffer> <localleader>c I"<esc>
+	autocmd BufNewFile,BufRead *.vim nnoremap <buffer> <localleader>c I"<esc>
+	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 augroup END
 
 " Default file explorer to VimFiler
@@ -54,7 +64,6 @@ let g:vimfiler_as_default_explorer = 1
 " Vim Solarized theme
 " Uncomment the following lines if you wish not to use the solarized
 " colorscheme
-syntax enable
 set background=dark
 colorscheme solarized
 
@@ -70,9 +79,6 @@ let g:airline_theme="solarized"
 " Uncomment the following line if you wish to use the default vim-airline
 " theme
 " let g:airline_theme="dark"
-
-" Set 2 lines to the cursor when moving vertically with j/k like Emacs
-set so=2
 
 " Visual mode pressing * or # searches for the current selection
 function! VisualSelection(direction, extra_filter) range
