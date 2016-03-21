@@ -6,19 +6,26 @@
 " Pathogen startup
 execute pathogen#infect()
 
-" Set
+" Set options
 set incsearch
 set nocp
 set number
 set cursorline
 set so=2
+set clipboard=unnamed
+set encoding=utf-8 nobomb
+set backupdir=~/.config/nvim/backups
+set directory=~/.config/nvim/swaps
+if exists("%undodir")
+	set undodir=~/.config/nvim/undo
+endif
 
 " Enable syntax highlighting
 syntax enable
 
 " Set <leader> and <localleader>
 let mapleader = "'"
-let maplocalleader = "["
+let maplocalleader = ","
 
 " Toggle relativenumber
 nnoremap <leader>r :set relativenumber!<cr>
