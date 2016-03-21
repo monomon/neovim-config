@@ -3,8 +3,9 @@
 " Created by Tenn1518 "
 """""""""""""""""""""""
 
-" Plugin manager
+" Pathogen {{{
 execute pathogen#infect()
+}}}
 
 " Set options {{{
 set incsearch
@@ -123,13 +124,15 @@ map <leader>t<leader> :tabnext
 nnoremap <space> za
 " }}}
 
-" Plugin settings {{{
+" Colorscheme {{{
 " Vim Solarized theme
 " Uncomment the following lines if you wish not to use the solarized
 " colorscheme
 set background=dark
 colorscheme solarized
+" }}}
 
+" Vim-airline {{{
 " Powerline symbols for vim-airline
 let g:airline_powerline_fonts = 1
 
