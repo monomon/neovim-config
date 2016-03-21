@@ -46,8 +46,10 @@ let maplocalleader = ","
 nnoremap <leader>r :set relativenumber!<cr>
 
 " Edit init.vim
-nnoremap <leader>v :vsplit $MYVIMRC<cr>
-nnoremap <leader>s :source $MYVIMRC<cr>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>ep :vsp ~/.zshrc<cr>
+nnoremap <leader>ea :vsp ~/.zsh_aliases<cr>
+nnoremap <leader>es :source $MYVIMRC<cr>
 
 " Move around easier in insert mode
 inoremap <c-h> <left>
