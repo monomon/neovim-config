@@ -3,16 +3,15 @@
 " Created by Tenn1518 "
 """""""""""""""""""""""
 
-" Pathogen startup
+" Plugin manager
 execute pathogen#infect()
 
-" Set options
+" Set options {{{
 set incsearch
 set nocp
 set number
 set cursorline
 set so=2
-set encoding=utf-8 nobomb
 set backupdir=~/.config/nvim/backups
 set directory=~/.config/nvim/swaps
 if exists("%undodir")
@@ -22,6 +21,22 @@ endif
 " Enable syntax highlighting
 syntax enable
 
+filetype on
+
+" Automatic commands
+augroup comment
+	autocmd!
+	autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
+	autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
+	autocmd BufNewFile,BufRead *.vim nnoremap <buffer> <localleader>c I"<esc>
+	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+augroup END
+
+" Default file explorer to VimFiler
+let g:vimfiler_as_default_explorer = 1
+" }}}
+
+" Mappings {{{
 " Set <leader> and <localleader>
 let mapleader = "'"
 let maplocalleader = ","
@@ -52,39 +67,6 @@ nnoremap yl 0y$
 
 " Cut function
 nnoremap yd 0y$dd
-
-filetype on
-
-" Automatic commands
-augroup comment
-	autocmd!
-	autocmd FileType javascript nnoremap <buffer> <localleader>c I//<esc>
-	autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
-	autocmd BufNewFile,BufRead *.vim nnoremap <buffer> <localleader>c I"<esc>
-	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
-augroup END
-
-" Default file explorer to VimFiler
-let g:vimfiler_as_default_explorer = 1
-
-" Vim Solarized theme
-" Uncomment the following lines if you wish not to use the solarized
-" colorscheme
-set background=dark
-colorscheme solarized
-
-" Powerline symbols for vim-airline
-let g:airline_powerline_fonts = 1
-
-" Set vim-airline theme
-" Comment the following line if you wish not to use the solarized
-" colorscheme
-let g:airline_theme="solarized"
-
-" Default vim-airline theme
-" Uncomment the following line if you wish to use the default vim-airline
-" theme
-" let g:airline_theme="dark"
 
 " Visual mode pressing * or # searches for the current selection
 function! VisualSelection(direction, extra_filter) range
@@ -136,3 +118,32 @@ map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove 
 map <leader>t<leader> :tabnext
+
+" Space toggles a fold
+nnoremap <space> za
+" }}}
+
+" Plugin settings {{{
+" Vim Solarized theme
+" Uncomment the following lines if you wish not to use the solarized
+" colorscheme
+set background=dark
+colorscheme solarized
+
+" Powerline symbols for vim-airline
+let g:airline_powerline_fonts = 1
+
+" Set vim-airline theme
+" Comment the following line if you wish not to use the solarized
+" colorscheme
+let g:airline_theme="solarized"
+
+" Default vim-airline theme
+" Uncomment the following line if you wish to use the default vim-airline
+" theme
+" let g:airline_theme="dark"
+" }}}
+
+" Enable folding in init.vim to make editing init.vim easier
+" Use "za" or "<space>" to open/close a tab
+" vim:foldmethod=marker:foldlevel=0
