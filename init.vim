@@ -12,7 +12,6 @@ set nocp
 set number
 set cursorline
 set so=2
-set clipboard=unnamed
 set encoding=utf-8 nobomb
 set backupdir=~/.config/nvim/backups
 set directory=~/.config/nvim/swaps
