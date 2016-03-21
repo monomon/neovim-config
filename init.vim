@@ -15,9 +15,15 @@ set cursorline
 set so=2
 set backupdir=~/.config/nvim/backups
 set directory=~/.config/nvim/swaps
+
 if exists("%undodir")
 	set undodir=~/.config/nvim/undo
 endif
+
+" Folding behaviour
+set foldlevelstart=10
+set foldnestmax=10
+set foldmethod=indent
 
 " Enable syntax highlighting
 syntax enable
