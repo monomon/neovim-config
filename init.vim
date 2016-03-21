@@ -49,7 +49,7 @@ nnoremap <leader>r :set relativenumber!<cr>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>ep :vsp ~/.zshrc<cr>
 nnoremap <leader>ea :vsp ~/.zsh_aliases<cr>
-nnoremap <leader>es :source $MYVIMRC<cr>
+nnoremap <leader>s :source $MYVIMRC<cr>
 
 " Move around easier in insert mode
 inoremap <c-h> <left>
@@ -60,6 +60,11 @@ inoremap <c-l> <right>
 " Strong H/L
 nnoremap H 0
 nnoremap L $
+
+" Disable the old way in order to force myself into learning the new way
+nnoremap $ <nop>
+nnoremap ^ <nop>
+nnoremap 0 <nop>
 
 " Switch to normal mode
 inoremap jk <ESC>
