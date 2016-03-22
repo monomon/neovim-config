@@ -1,3 +1,5 @@
+# **neovim-config**
+
 Welcome to my repo used for keeping my Neovim configuration files that are important for me whenever I setup a new system that I use neovim regularly on.
 
 This project is licensed under the terms of the [MIT license](https://github.com/Tenn1518/neovim-config/blob/master/LICENSE).
