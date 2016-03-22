@@ -1,10 +1,3 @@
-.__   __.  _______   _\_\_\_\__   _\_\__    _\_\_\_  \_\_  .\_\_\_  ___.          ___\_\_\_   \_\_\_\_\__   .__   __.  _\_\_\_\_\__  __    _\_\_\_\_\__ 
-|  \ |  | |   _\_\__| /  __  \  \   \  /   / |  | |   \/   |         /      | /  __  \  |  \ |  | |   _\_\__||  |  /  _\_\_\_\_|
-|   \|  | |  |__   |  |  |  |  \   \/   /  |  | |  \  /  |  _\_\_\_\__|  ,----'|  |  |  | |   \|  | |  |__   |  | |  |  __  
-|  . `  | |   __|  |  |  |  |   \      /   |  | |  |\/|  | |_\_\_\_\__|  |     |  |  |  | |  . `  | |   __|  |  | |  | |_ | 
-|  |\   | |  |____ |  `--'  |    \    /    |  | |  |  |  |        |  `----.|  `--'  | |  |\   | |  |     |  | |  |__| | 
-|__| \__| |___\_\_\__| \_\_\_\_\__/      \__/     |__| |__|  |__|         \_\_\_\_\__| \_\_\_\_\__/  |__| \__| |__|     |__|  \_\_\_\_\__|
-
 Welcome to my repo used for keeping my Neovim configuration files that are important for me whenever I setup a new system that I use neovim regularly on.
 
 This project is licensed under the terms of the [MIT license](https://github.com/Tenn1518/neovim-config/blob/master/LICENSE).
