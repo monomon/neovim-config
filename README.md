@@ -10,10 +10,11 @@ This project is licensed under the terms of the [MIT license](https://github.com
  [unite.vim](https://github.com/https://github.com/Shougo/unite.vim) | Used to create interfaces, dependency of vim-fugitive
  [vim-airline](https://github.com/vim-airline/vim-airline) | Lean & mean status/tabline that's light as air
  [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) | A collection of themes for vim-airline
- [vimfiler](https://github.com/Shougo/vimfiler.vim) | Powerful file explorer implemented by vimscript
  [vim-fugitive](https://github.com/tpope/vim-fugitive) | A Git wrapper for vim
  [vim-sensible](https://github.com/tpope/vim-sensible) | Defaults everyone can agree on
  [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) | Precision colorscheme for the vim text editor
+ [ag.vim](https://github.com/vim-scripts/ag.vim) | ag, the_silver_searcher (better than ack, which is better than grep)
+ [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) | Fuzzy file, buffer, mru, tag, etc finder
 
 #### How do I use these files?
 First, you'll (obviously) need [Neovim](https://github.com/neovim/neovim), though ordinary [Vim](https://github.com/vim/vim) may work also (but the following instructions will not work for Vim). You need to clone this repository and move it to $XDG_CONFIG_HOME/nvim.
