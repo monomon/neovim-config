@@ -9,6 +9,12 @@ execute pathogen#infect()
 
 " Set options {{{
 set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set wildmenu
+set lazyredraw
+set showmatch
 set nocp
 set number
 set cursorline
@@ -29,6 +35,7 @@ set foldmethod=indent
 syntax enable
 
 filetype on
+filetype indent on
 
 " Automatic commands
 augroup comment
@@ -37,6 +44,7 @@ augroup comment
 	autocmd FileType python nnoremap <buffer> <localleader>c I#<esc>
 	autocmd BufNewFile,BufRead *.vim nnoremap <buffer> <localleader>c I"<esc>
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+	autocmd bufwritepost vimrc source $MYVIMRC
 augroup END
 
 " Default file explorer to VimFiler
@@ -46,7 +54,11 @@ let g:vimfiler_as_default_explorer = 1
 " Mappings {{{
 " Set <leader> and <localleader>
 let mapleader = "'"
+let g:mapleader = "'"
 let maplocalleader = ","
+
+" Faster save and exit
+nnoremap <leader>w :wq<cr>
 
 " Toggle relativenumber
 nnoremap <leader>r :set relativenumber!<cr>
@@ -66,6 +78,12 @@ inoremap <c-l> <right>
 " Strong H/L
 nnoremap H 0
 nnoremap L $
+
+" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+nmap <M-k> mz:m-2<cr>`z
+nmap <M-j> mz:m+<cr>`z
+vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 " Disable the old way in order to force myself into learning the new way
 nnoremap $ <nop>
