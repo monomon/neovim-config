@@ -33,6 +33,23 @@ bash install.sh
 ```
 You'll then need to set a Powerline-patched font as your terminal font. I use "Ubuntu Mono deriative Powerline Regular" 14pt. If you are on OS X, Menlo seems like a popular choice.
 
+CtrlP.vim is set to use ag.vim, which depends on the_silver_searcher being installed. You'll need to install the_silver_searcher with your Linux distro's package manager or Homebrew or Ports for Mac. To install on Mac, install Homebrew and then run:
+```
+brew install the_silver_searcher
+```
+On Ubuntu or Debian, run:
+```
+sudo apt-get install the_silver_searcher
+```
+On Fedora, run:
+```
+sudo dnf install the_silver_searcher
+```
+On Arch Linux, run:
+```
+sudo pacman -S the_silver-searcher
+```
+
 ##### On Mac/Linux/BSD:
 ```
 git clone --recursive https://github.com/Tenn1518/neovim-config ~/.config/nvim
@@ -51,7 +68,3 @@ That's pretty much it.
 Plugins are managed by [Pathogen.vim](https://github.com/tpope/vim-pathogen), a plugin installer and manager for Vim/Neovim and my personal favorite. To install more plugins, you need to drop your plugin folder into $MYVIMRC/bundle/, which on Unix-like systems should be ~/.config/nvim. 
 
 Plugins are handled as [submodules](https://www.git-scm.com/book/en/v2/Git-Tools-Submodules), so when you pull the repository, you get the latest version of all the plugins. That's also why you have to clone the repo with the "--recursive" flag, so that all the submodules are also pulled and initialized. You'll need to do a `git fetch`, `git pull`, and `git submodule update --remote` in order to update the repository and the submodules. You'll also probably need to do a `git submodule init` if you find empty plugin folders, which basically mean I've added a new submodule and you need to let git initialize it and install it.
-
-#### A quick warning
-
-I'm a very nooby neovim user, and have only been using it for about a couple of weeks now. I've been using vim for perhaps ~5 months now, and though I can do basic things, I'm very much still a noob. I also don't care about any vi philosophies and just want to make things easier for myself, so if you don't agree with something I've decided to add, I don't care very much.
