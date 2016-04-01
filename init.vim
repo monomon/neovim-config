@@ -24,7 +24,7 @@ Plug 'Shougo/unite.vim' | Plug 'tpope/vim-fugitive'
 Plug 'rking/ag.vim' | Plug 'ctrlpvim/ctrlp.vim'
 
 " vim-colors-solarized
-Plug 'altercation/vim-colors-solarized
+Plug 'altercation/vim-colors-solarized'
 
 " vim-airline and vim-airline themes
 Plug 'vim-airline/vim-airline'
