@@ -2,11 +2,13 @@
 
 Welcome to my repo used for keeping my Neovim configuration files that are important for me whenever I setup a new system that I use neovim regularly on.
 
+This branch is for migrating my repository to using vim-plug from pathogen.vim. If you are using this branch, please run :PlugInstall when you are done installing the repository in order to install plugins.
+
 This project is licensed under the terms of the [MIT license](https://github.com/Tenn1518/neovim-config/blob/master/LICENSE).
 
  Plugins | Description
  ------- | -----------
- [Pathogen.vim](https://github.com/tpope/vim-pathogen) | Plugin installer and manager
+ [vim-plug](https://github.com/junegunn/vim-plug) | Minimalist vim plugin manager
  [unite.vim](https://github.com/https://github.com/Shougo/unite.vim) | Used to create interfaces, dependency of vim-fugitive
  [vim-airline](https://github.com/vim-airline/vim-airline) | Lean & mean status/tabline that's light as air
  [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) | A collection of themes for vim-airline
@@ -39,7 +41,7 @@ brew install the_silver_searcher
 ```
 On Ubuntu or Debian, run:
 ```
-sudo apt-get install the_silver_searcher
+sudo apt-get install silversearcher-ag
 ```
 On Fedora, run:
 ```
@@ -54,6 +56,11 @@ sudo pacman -S the_silver-searcher
 ```
 git clone --recursive https://github.com/Tenn1518/neovim-config ~/.config/nvim
 ```
+And then run:
+```
+:PlugInstall
+```
+inside neovim.
 That's it! Surprised?
 
 ##### On Windows
@@ -65,6 +72,4 @@ Add more plugins and stuffs
 That's pretty much it.
 
 #### Plugins?
-Plugins are managed by [Pathogen.vim](https://github.com/tpope/vim-pathogen), a plugin installer and manager for Vim/Neovim and my personal favorite. To install more plugins, you need to drop your plugin folder into $MYVIMRC/bundle/, which on Unix-like systems should be ~/.config/nvim. 
-
-Plugins are handled as [submodules](https://www.git-scm.com/book/en/v2/Git-Tools-Submodules), so when you pull the repository, you get the latest version of all the plugins. That's also why you have to clone the repo with the "--recursive" flag, so that all the submodules are also pulled and initialized. You'll need to do a `git fetch`, `git pull`, and `git submodule update --remote` in order to update the repository and the submodules. You'll also probably need to do a `git submodule init` if you find empty plugin folders, which basically mean I've added a new submodule and you need to let git initialize it and install it.
+Plugins are managed by vim-plug, a minimalist vim plugin manager. To install plugins, run ":PlugInstall". To update plugins, run ":PlugUpdate".
