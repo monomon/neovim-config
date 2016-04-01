@@ -30,6 +30,9 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Syntastic
+Plug 'scrooloose/syntastic'
+
 call plug#end()
 " }}}
 
