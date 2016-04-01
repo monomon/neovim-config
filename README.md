@@ -56,7 +56,7 @@ sudo pacman -S the_silver-searcher
 ```
 git clone --recursive https://github.com/Tenn1518/neovim-config ~/.config/nvim
 ```
-And then run:
+If you get an error when entering neovim, don't worry. That's to be expected, since your plugins aren't installed yet. Install them with:
 ```
 :PlugInstall
 ```
