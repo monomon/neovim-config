@@ -9,8 +9,28 @@
 "                    Created by Tenn1518 "
 """"""""""""""""""""""""""""""""""""""""""
 
-" Pathogen {{{
-execute pathogen#infect()
+" vim-plug {{{
+call plug#begin('~/.vim/plugged')
+
+" To get more information about these plugins, take a look at README.md
+
+" vim-sensible
+Plug 'tpope/vim-sensible'
+
+" vim-fugitive depends on unite.vim
+Plug 'Shougo/unite.vim' | Plug 'tpope/vim-fugitive'
+
+" ctrlp.vim depends on ag.vim (in this configuration)
+Plug 'rking/ag.vim' | Plug 'ctrlpvim/ctrlp.vim'
+
+" vim-colors-solarized
+Plug 'altercation/vim-colors-solarized
+
+" vim-airline and vim-airline themes
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+call plug#end()
 " }}}
 
 " Set options {{{
