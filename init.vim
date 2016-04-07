@@ -28,6 +28,9 @@ set so=2
 set backupdir=~/.config/nvim/backups
 set directory=~/.config/nvim/swaps
 
+" Set cursor as blinking in insert mode, and a square in normal mode
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
 if exists("%undodir")
 	set undodir=~/.config/nvim/undo
 endif
