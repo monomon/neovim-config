@@ -12,6 +12,7 @@ This project is licensed under the terms of the [MIT license](https://github.com
  [unite.vim](https://github.com/https://github.com/Shougo/unite.vim) | Used to create interfaces, dependency of vim-fugitive
  [vim-airline](https://github.com/vim-airline/vim-airline) | Lean & mean status/tabline that's light as air
  [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) | A collection of themes for vim-airline
+ [vim-bufferline](https://github.com/bling/vim-bufferline) | super simple vim plugin to show the list of buffers in the command bar |
  [vim-fugitive](https://github.com/tpope/vim-fugitive) | A Git wrapper for vim
  [vim-sensible](https://github.com/tpope/vim-sensible) | Defaults everyone can agree on
  [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) | Precision colorscheme for the vim text editor
