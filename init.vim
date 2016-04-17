@@ -30,6 +30,9 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Vim-bufferline
+Plug 'bling/vim-bufferline'
+
 " Syntastic
 Plug 'scrooloose/syntastic'
 
@@ -215,6 +218,13 @@ let g:airline_theme="solarized"
 " Uncomment the following line if you wish to use the default vim-airline
 " theme
 " let g:airline_theme="dark"
+" }}}
+
+" Vim-bufferline {{{
+
+" Stop bufferline echoing to command bar
+let g:bufferline_echo = 0
+
 " }}}
 
 " CtrlP {{{
