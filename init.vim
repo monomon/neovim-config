@@ -88,6 +88,7 @@ let g:vimfiler_as_default_explorer = 1
 
 " Mappings {{{
 " Set <leader> and <localleader>
+nnoremap "'" <nop>
 let mapleader = "'"
 let g:mapleader = "'"
 let maplocalleader = ","
@@ -122,8 +123,8 @@ vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 " Disable the old way in order to force myself into learning the new way
 nnoremap $ <nop>
-nnoremap ^ <nop>
 nnoremap 0 <nop>
+nnoremap ^ <nop>
 
 " Switch to normal mode
 inoremap jk <ESC>
@@ -195,6 +196,11 @@ nnoremap <leader>a :Ag
 " Ctrl+P mapping
 let g:ctrlp_map = "<c-p>"
 let g:ctrlp_cmd = "CtrlP"
+
+" Fugitive git wrapper mappings
+nnoremap <leader>ga :Gwrite<cr>
+nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gr :Gremove<cr>
 " }}}
 
 " Colorscheme {{{
