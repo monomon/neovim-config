@@ -23,6 +23,9 @@ Plug 'Shougo/unite.vim' | Plug 'tpope/vim-fugitive'
 " ctrlp.vim depends on ag.vim (in this configuration)
 Plug 'rking/ag.vim' | Plug 'ctrlpvim/ctrlp.vim'
 
+" NERDTree, replacement for vim's browser
+Plug 'scrooloose/nerdtree'
+
 " vim-colors-solarized
 Plug 'altercation/vim-colors-solarized'
 
@@ -115,7 +118,7 @@ inoremap <c-l> <right>
 nnoremap H 0
 nnoremap L $
 
-" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+" Move a line of text using ALT+[jk] or Command+[jk] on mac
 nmap <M-k> mz:m-2<cr>`z
 nmap <M-j> mz:m+<cr>`z
 vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
@@ -196,6 +199,9 @@ nnoremap <leader>a :Ag
 " Ctrl+P mapping
 let g:ctrlp_map = "<c-p>"
 let g:ctrlp_cmd = "CtrlP"
+
+" NERDTree mapping
+map <C-n> :NERDTreeToggle<CR>
 
 " Fugitive git wrapper mappings
 nnoremap <leader>ga :Gwrite<cr>
