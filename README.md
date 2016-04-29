@@ -2,8 +2,6 @@
 
 Welcome to my repo used for keeping my Neovim configuration files that are important for me whenever I setup a new system that I use neovim regularly on.
 
-This branch is for migrating my repository to using vim-plug from pathogen.vim. If you are using this branch, please run :PlugInstall when you are done installing the repository in order to install plugins.
-
 This project is licensed under the terms of the [MIT license](https://github.com/Tenn1518/neovim-config/blob/master/LICENSE).
 
  Plugins | Description
@@ -18,6 +16,7 @@ This project is licensed under the terms of the [MIT license](https://github.com
  [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) | Precision colorscheme for the vim text editor
  [ag.vim](https://github.com/vim-scripts/ag.vim) | ag, the_silver_searcher (better than ack, which is better than grep)
  [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) | Fuzzy file, buffer, mru, tag, etc finder
+ [NERDTree](https://github.com/scrooloose/nerdtree) | A tree explorer plugin for vim
 
 #### How do I use these files?
 First, you'll (obviously) need [Neovim](https://github.com/neovim/neovim), though ordinary [Vim](https://github.com/vim/vim) may work also (but the following instructions will not work for Vim). You need to clone this repository and move it to $XDG_CONFIG_HOME/nvim.
