@@ -21,7 +21,10 @@ Plug 'tpope/vim-sensible'
 Plug 'Shougo/unite.vim' | Plug 'tpope/vim-fugitive'
 
 " ctrlp.vim depends on ag.vim (in this configuration)
-Plug 'rking/ag.vim' | Plug 'ctrlpvim/ctrlp.vim'
+Plug 'rking/ag.vim' | " Plug 'ctrlpvim/ctrlp.vim'
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install --bin' }
+Plug 'junegunn/fzf.vim'
 
 " NERDTree, replacement for vim's browser
 Plug 'scrooloose/nerdtree'
@@ -32,6 +35,9 @@ Plug 'altercation/vim-colors-solarized'
 " vim-airline and vim-airline themes
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" Theme
+Plug 'jpo/vim-railscasts-theme'
 
 " Vim-bufferline
 Plug 'bling/vim-bufferline'
@@ -102,6 +108,10 @@ nnoremap <leader>w :wq<cr>
 " Toggle relativenumber
 nnoremap <leader>r :set relativenumber!<cr>
 
+" fzf
+nmap <leader>b :Buffers<CR>
+nmap <leader>f :Files<CR>
+
 " Edit init.vim
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>ep :vsp ~/.zshrc<cr>
@@ -131,7 +141,7 @@ nnoremap ^ <nop>
 
 " Switch to normal mode
 inoremap jk <ESC>
-inoremap <ESC> <NOP>
+" inoremap <ESC> <NOP>
 
 " Make yanking an entire line much easier
 nnoremap yl 0y$
@@ -214,7 +224,7 @@ nnoremap <leader>gr :Gremove<cr>
 " Uncomment the following lines if you wish not to use the solarized
 " colorscheme
 set background=dark
-colorscheme solarized
+colorscheme railscasts
 " }}}
 
 " Vim-airline {{{
@@ -240,10 +250,10 @@ let g:bufferline_echo = 0
 " }}}
 
 " CtrlP {{{
-let g:ctrlp_match_window = 'bottom,order:ttb'
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+" let g:ctrlp_match_window = 'bottom,order:ttb'
+" let g:ctrlp_switch_buffer = 0
+" let g:ctrlp_working_path_mode = 0
+" let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " }}}
 
 " Enable folding in init.vim to make editing init.vim easier
